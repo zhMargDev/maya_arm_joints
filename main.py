@@ -1,6 +1,6 @@
 import pymel.core as pm
 
-from PySide2 import QtCore, QtWidgets
+from PyQt5 import QtCore, QtWidgets
 
 from joints import arms
 
