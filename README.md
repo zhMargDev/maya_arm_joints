@@ -10,9 +10,11 @@ Move maya_arm_joints.py and joints folder to C:\user\username\documents\maya\202
 **Second step**
 ```
 Create a icon on maya
-
+```
+```
 Then open script
-
+```
+```
 Select Python
 
 ```
@@ -21,7 +23,8 @@ Select Python
 ```
 Write this code
 
-
+```
+```
 
 import maya.cmds as cmds
 import os
