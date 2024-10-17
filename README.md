@@ -1,9 +1,34 @@
+***First step***
+
+```
+Upload this files and unpack zip
+```
+```
+Move maya_arm_joints.py and joints folder to C:\user\username\documents\maya\2022\scripts\
+```
+
+**Second step**
+```
+Create a icon on maya
+
+Then open script
+
+Select Python
+
+```
+
+**Last step**
+```
+Write this code
 
 
-def create_button():
-    window = cmds.window(title="Arms_Joints")
-    cmds.columnLayout()
-    cmds.button(label="Run Script", command='import sys; sys.path.append("C:/Users/[Имя пользователя]/Documents/maya/scripts/maya_arm_joints"); execfile("main.py")')
-    cmds.showWindow(window)
 
-create_button()
+import maya.cmds as cmds
+import os
+
+user_script_dir = cmds.internalVar(usd=True)
+script_path = os.path.join(user_script_dir, "maya_arm_joints.py")
+
+with open(script_path, 'r') as file:
+    exec(file.read())
+```

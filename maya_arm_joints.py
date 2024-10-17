@@ -82,8 +82,8 @@ class RiggingTool(QtWidgets.QDialog):
 
     def createLeftArmJoints(self):
         # Implementation here
+        print(True)
         leftArm = arms.LeftArm
-        pass
 
     def createRightArmJoints(self):
         # Implementation here
